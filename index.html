@@ -8,115 +8,188 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body> 
-    <header  class="hero" id=hero>
+<body onclick="PlayAudio()"> 
+    <header  class="hero" id=hero >
         <div class="container">
          <nav class= "nav">
-             <a href="#footer"
+             <a href="#contacto"
               class="nav__items nav__items--cta">Contactame ahora</a>
              <a href="#projects"
            
              class="nav__items">Proyectos </a>
+             
          </nav>
 
          <section class="hero__container">
              <div class="hero__text">
-                 <h1 class ="hero__title">Hola soy Herrera Alejandro(Estudiante de U.T.N.G.P )</h1>
+                 <h1 class ="hero__title">Hola soy Herrera Alejandro ,Programador Trainee</h1>
                  <h2 class="hero__subtitle">Transformando ideas en realidades</h2>
-                 <a href="#footer"
+                 <a href="#contacto"
                  class="hero__cta">Contactame ahora</a>
+                 
              </div>
+             
+             <audio id="musica1"   loop>
+                <source src="assets/audioporfolio.mp3" type="audio/mpeg">
+                
+               Navedor incompatible
+               
+             </audio>
+             <script>
+               function PlayAudio()
+                {
+                document.getElementById("musica1").play();
+                }
 
+             </script>
          </section>
         </div>
-        <div class="hero__wave" style=" overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        <div class="hero__wave" style=" overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
     </header>
     <main>
-        <section class="presentation container" id=presentationcontainer>
-            <img src="assets/Nicolas.jpg" alt="Mi foto de github" class="presentation__picture">
-            <h2 class="subtitle"> Mi nombre es Alejandro Herrera</h2>
-            <p class="presentation__copy">Soy estudiante de la Universidad Tecnológica Nacional, en la Tecnicatura Universitaria en Programación.Soy una persona con gran capacidad de aprendizaje que siempre está tratando de superarse a sí mismo, adquiriendo nuevos conocimientos y nuevas responsabilidades.
+        <section class="presentation container" id=presentationpersonal>
+            <img src="assets/perfil.jpeg" alt="Mi foto de github" class="presentation__picture">
+            <h2 class="subtitle"> Conoceme un poco mas</h2>
+            <p class="presentation__copy">Soy estudiante de la UTN, en la Tecnicatura Universitaria en Programación.Soy una persona con gran capacidad de aprendizaje que siempre está tratando de superarse a sí mismo, adquiriendo nuevos conocimientos y nuevas responsabilidades.
               
             </p>
-            <a href="#footer"
+            <a href="#contacto"
             class="presentation__cta">Contactame ahora</a>
 
         </section>
-        <section class="about container">
-            <div class="about__text">
-                <h2 class="subtitle" id=subtitle> Mis Habilidades</h2>
-                <p class="about__paragraph">En el presente me encuentro aprendiendo y desarrollando aplicaciones con C# en .NET y SQL Server.Poseo conocimientos en C, C++, C#, T-SQL SERVER, HTML,CSS Y JAVASCRIPT .
-                Trabajo en equipo, bajo presión y me establezco relaciones cordiales con mis compañeros y mis superiores de manera natural.
-                </p>
-                
+        <section class="projects" id=skills>
+            <div class="container">
+                <h2 class="subtitle">Skills</h2>
+           <div class="skills">
+                <img width="150px" height="150px" src="assets/C++.jpg" alt="c++" >
+                <img width="150px" height="150px" src="assets/d.jpg" alt="C#" >
+                <img width="150px" height="150px"  src="assets/java.jpg" alt="java" >
+                <img width="150px" height="150px"  src="assets/html.jpg" alt="html" >
+                <img width="150px" height="150px"  src="assets/ccs.jpg" alt="ccs" >
+                <img width="150px" height="150px"  src="assets/javascript.jpg" alt="javascript" >
             </div>
-            <figure class="about__img">
-             <img src="assets/pc_mockup.jpg" alt="mi lugar de conforts" class="about__img">
-            </figure>
-
+        <section class="about container">
+           
+            
+       
             <figure class="about__img about__img--left">
                 <img src="assets/dev.svg" alt="ambito loboral" class="about__img">
                </figure>
 
                <div class="about__text">
-                <h2 class="subtitle">Sobre mi trabajo</h2>
-                <p class="about__paragraph">Soy una persona  proactiva en mi trabajo,que busca siempre la manera de resolver cada tarea con el mayor compromiso y seriedad</p>
+                <h2 class="subtitle">Mi entorno de trabajo</h2>
+                <p class="about__paragraph">Soy una persona  proactiva, que busca siempre la manera de resolver cada tarea con el mayor compromiso y seriedad</p>
                 <p class="about__paragraph">Mi objetivo desde mis primeras experiencias laborales siempre a sido el mismo, poder adquerir el mayor conocimiento posible para el desarrollo personal y colectivo de la empresa</p>
             </div>
         </section>
 
         <section class="projects" id=projects>
            <div class="container">
-               <h2 class="subtitle">Mis proyectos</h2>
+               <h2 class="subtitle">Proyectos</h2>
                <div class="projects__grid">
 
                 <article class="projects__item">
-                    <img src="assets/img1.png" alt="Proyecto clinica" class="projects__img">
+                    <img src="assets/Mario Broos.jpg" alt="Proyecto Mario Bross" class="projects__img">
                     <div class="projects__hover">
-                        <h2 class="projects__title">Proyecto</h2>
+                        <h2 class="projects__title">Mario Bross </h2>               
                         <i class="far fa-file-alt projects__icon"></i>
                     </div>
                 </article>
 
                 <article class="projects__item">
-                    <img src="assets/img2.jpg" alt="Proyecto lol" class="projects__img">
+                    <img src="assets/App de Turnos .png " alt="Proyecto clinica" class="projects__img">
                     <div class="projects__hover">
-                        <h2 class="projects__title">Proyecto</h2>
+                        <h2 class="projects__title">App de Turnos</h2>
                         <i class="far fa-file-alt projects__icon"></i>
                     </div>
                 </article>
 
                 <article class="projects__item">
-                    <img src="assets/img3.jpg" alt="Proyecto batalla Naval" class="projects__img">
+                    <img src="assets/Batalla Naval.jpg" alt="Batalla Naval" class="projects__img">
                     <div class="projects__hover">
-                        <h2 class="projects__title">Proyecto</h2>
+                        <h2 class="projects__title">Batalla Naval</h2>
                         <i class="far fa-file-alt projects__icon"></i>
                     </div>
                 </article>
 
                 <article class="projects__item">
-                    <img src="assets/img4.jpg" alt="Proyecto Mario Bross" class="projects__img">
-                   
+                    <img src="assets/Gestor De Articulos.png" alt="Proyecto batalla Naval" class="projects__img">
                     <div class="projects__hover">
-                        <h2 class="projects__title">Proyectos
-                        </h2>
+                        <h2 class="projects__title">Gestor de Articulos</h2>
                         <i class="far fa-file-alt projects__icon"></i>
                     </div>
                 </article>
 
-
                 <article class="projects__item">
-                    <img src="assets/img5.png" alt="Proyecto ABML PRODUCTOS" class="projects__img">
+                    <img src="assets/Sistemas de turnos (java).png" alt="Sistema de turnos" class="projects__img">
                     <div class="projects__hover">
-                        <h2 class="projects__title">Proyecto
-
-                        </h2>
-                        
+                        <h2 class="projects__title">Sistema de Turnos </h2>
+                        <i class="far fa-file-alt projects__icon"></i>
+                    </div>
+                </article>
+                       
+                        <article class="projects__item">
+                            <img src="assets/WebApp de Consorcio.png" alt="  Web App Consorcio" class="projects__img">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">Web App  de Consorcio</h2>
+                                <i class="far fa-file-alt projects__icon"></i>
+                            </div>
+                        </article>
+        
+                        <article class="projects__item">
+                            <img src="assets/WebApp Tienda Informatica.png" alt=" Web App Tienda Informatica" class="projects__img">
+                           
+                            <div class="projects__hover">
+                                <h2 class="projects__title"> Tienda Web de Informatica</h2>
+                                <i class="far fa-file-alt projects__icon"></i>
+                            </div>
+                        </article>
+        
+        
+                        <article class="projects__item">
+                            <img src="assets/WebAppTiendaArt.png" alt="Web App tienda Art" class="projects__img">
+                            <div class="projects__hover">
+                                <h2 class="projects__title"> Tienda Web de Articulos</h2>              
                         <i class="far fa-file-alt projects__icon"></i>
                     </div>
                 </article>
                </div>
            </div>
+        </section>
+
+        <section id="contacto">
+            <h3 class="titulo-seccion">Contactame ahora</h3>
+            <div class="contenedor-form">
+                <form action="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo *" class="input-mitad"id=Nombre>
+                        <input type="email" placeholder="Dirección de Email" class="input-mitad"id=Email>
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full"id=Tema>
+                    </div>
+                    <div class="fila">
+                        <textarea name="" id="Mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    </div>
+    
+                    <input type="submit" onclick="validarformulario()" value="Enviar mensaje" class="btn-enviar">
+                </form>
+            </div>
+                    <script>
+                        function validarformulario(){
+                        var nombre =document.getElementById("Nombre").value;
+                        var email =document.getElementById("Email").value;
+                        var Tema =document.getElementById("Tema").value;
+                        var mensaje =document.getElementById("Mensaje").value;
+                    if(nombre==""||email==""||tema==""||mensaje=="")
+                    {
+                    alert("Debe completar todos los campos");
+
+                    }
+                    }
+
+
+                    </script>
         </section>
     </main>
 
@@ -124,13 +197,13 @@
      <div class="container footer__grid">
          <nav class="nav nav--footer">
              <a class="nav__items nav__items--footer" href="#hero">Inicio</a>
-             <a class="nav__items nav__items--footer" href="#presentationcontainer">Sobre Mi</a>
-             <a class="nav__items nav__items--footer" href="#subtitle">Mis kills</a>
+             <a class="nav__items nav__items--footer" href="#presentationpersonal ">Sobre Mi</a>
+             <a class="nav__items nav__items--footer" href="#skills">Mis skills</a>
              <a class="nav__items nav__items--footer" href="#projects">Proyectos</a>
          </nav>
 
          <section class="footer__contact" id=footer>
-             <h3 class="footer__title">Contactame: aleh07@hotmail.com</h3> 
+             <h3 class="footer__title">Redes</h3> 
              <div class="footer__icons">
 
                  <span class="footer__container-icons">
